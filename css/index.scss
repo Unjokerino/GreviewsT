@@ -7,6 +7,8 @@ body {
 
 .container {
 
+    border: 2px solid black;
+    border-image: url('../images/border.png');
     min-height: calc(100% - 56px);
     border-radius: 6px;
     margin: auto;
@@ -27,8 +29,9 @@ body {
         align-items: center;
 
         .header_image {
-            height: 95px;
-            width: 95px;
+            height: 13vh;
+            width: 13vh;
+        }
         }
 
         .stars_image {
@@ -225,7 +228,7 @@ body {
 
 
 
-}
+
 
 .main_logo{
     width: 122px;
@@ -257,7 +260,7 @@ body {
 .subtitle {
     font-style: normal;
     font-weight: normal;
-    font-size: 1.8vh;
+    font-size: 1.6vh;
     line-height: 14px;
     /* identical to box height */
     letter-spacing: -0.02em;
