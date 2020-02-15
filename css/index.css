@@ -7,9 +7,17 @@ body {
 }
 
 .container {
-  border: 2px solid black;
-  -o-border-image: url("../images/border.png");
-     border-image: url("../images/border.png");
+  width: 90%;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #fff;
+  background-clip: padding-box;
+  /* !importanté */
+  border: solid 2px transparent;
+  /* !importanté */
+  border-radius: 1em;
+  border-bottom: 1px solid #fb3648;
   min-height: calc(100% - 56px);
   border-radius: 6px;
   margin: auto;
@@ -24,6 +32,22 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.container:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin: -2px;
+  /* !importanté */
+  border-radius: inherit;
+  /* !importanté */
+  background: -webkit-gradient(linear, left top, right top, from(#498bac), color-stop(#579d72), color-stop(#579d72), color-stop(#579d72), color-stop(#579d72), color-stop(#579d72), color-stop(#579d72), to(#deb936));
+  background: linear-gradient(to right, #498bac, #579d72, #579d72, #579d72, #579d72, #579d72, #579d72, #deb936);
 }
 
 .container .header_image_container {
@@ -52,7 +76,7 @@ body {
 
 .main_info {
   padding: 12px;
-  margin: 0px 17px 0px 17px;
+  margin: 0px 17px 26px 17px;
   border: 1px solid #a1c7b3;
   border-top-width: 1.3px;
   border-radius: 3px;
@@ -284,7 +308,7 @@ body {
   margin-bottom: -81px;
   z-index: 999;
   background-color: #fff;
-  bottom: 17px;
+  bottom: 40px;
 }
 
 .main_logo:hover {
